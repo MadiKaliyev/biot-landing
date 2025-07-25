@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Инженер БиОТ — Авторский курс</title>
+	<link rel="stylesheet" href="css/main.css">
+	<script src="libs/gsap/gsap.min.js" defer></script>
+	<script src="libs/gsap/ScrollTrigger.min.js" defer></script>
+	<script src="libs/gsap/ScrollSmoother.min.js" defer></script>
+	<script src="js/app.js" defer></script>
+</head>
+<body>
+	<div class="wrapper">
+		<div class="main-nav">
+			<ul>
+				<li><a href="#about">О курсе</a></li>
+				<li><a href="#audience">Для кого</a></li>
+				<li><a href="#program">Программа</a></li>
+				<li><a href="#price">Стоимость</a></li>
+				<li><a href="#contacts">Контакты</a></li>
+			</ul>
+		</div>
+		<div class="content">
+			<header class="main-header">
+				<div class="layers">
+					<div class="layer__header">
+						<img src="img/ptp.png" alt="Welcome" class="layers__caption-img">
+						<div class="layers__title">Pass to perfection</div>
+					</div>
+					<div class="layer layers__base" style="background-image: url(img/layer-base.png);"></div>
+					<div class="layer layers__middle" style="background-image: url(img/layer-middle.png);"></div>
+					<div class="layer layers__front" style="background-image: url(img/layer-front.png);"></div>
+				</div>
+			</header>
+			<article class="main-article" style="background-image: url(img/dungeon.jpg);">
+				<div>
+					<h4 class="main-article__middle">РАСКРОЙТЕ СВОЙ ПОТЕНЦИАЛ ВМЕСТЕ С</h4>
+					<h2 class="main-article__header">PASS TO PERFECTION</h2>
+					<p class="main-article__paragraph">"Обучение и контроль - два эффективных инструмента в руках инженера по безопасности и охране труда."</p>
+					<img src="img/30001.png" alt="Цена курса $3000" class="bio-course-price">
+				</div>
+			</article>
+		</div>
+	</div>
+	<script>
+		window.addEventListener('DOMContentLoaded', () => {
+			const priceImage = document.querySelector('.bio-course-price');
+			if (priceImage) {
+				setTimeout(() => {
+					priceImage.classList.add('show');
+				}, 300);
+			}
+		});
+	</script>
+</body>
+</html>
